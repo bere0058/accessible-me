@@ -105,12 +105,3 @@ form button {
 .button {
   float: right;
 }
-.topbutton {
-  bottom:0;
-  position: relative;
-  float: right;
-  background: rgba(238, 238, 238, 0.89);
-  border: 2px solid black;
-  padding: 1rem;
-  text-transform: uppercase;
-}
