@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body id="body">
   <div class="container">
     <div class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
@@ -24,7 +24,21 @@
           <li><a href="#studio">Studio</a></li>
         </ul>
       </div>
-      <img src="https://placekitten.com/1200/900" alt="kitten placed behind a wooden wall" class="banner">
+      <ul class="themecontainer">
+        <li class="theme" id="dark"></li>
+        <li class="theme" id="salmon"></li>
+        <li class="theme" id="yellow"></li>
+      </ul>
+      <section class="videof">
+        <label for="video-name">Write your youtube link</label>
+        <input id="video-name" type="text">
+        <button id="btn-video">GO</button>
+        <div class="video"></div>
+      </section>
+      <button id="btn">Cliquer ici pour changer l'image</button>
+      <div class="chat">
+        <img id="chat" src="https://placekitten.com/1200/900" alt="kitten placed behind a wooden wall" class="banner">
+      </div>
     </div>
     <div class="main-content" role="main">
       <h2>Welcome to Jam Box</h2>
@@ -70,10 +84,11 @@
     <div class="site-footer">
       &copy; 2021 Jam Box Studios 
     </div>
-    <div class="button">
+    <div>
       <a href="#top">Go back to top</a>
     </div>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>

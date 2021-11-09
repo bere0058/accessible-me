@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   text-size-adjust: auto;
+  transition: .5s;
 }
 
 h1,
@@ -101,7 +102,72 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
-
+/* Java Script */
 .button {
   float: right;
+}
+.show {
+  visibility: hidden;
+  height: 0;
+}
+.black {
+  background-color: black;
+  color: whitesmoke;
+  transition:  0.5s;
+  animation: black 0.5s;
+}
+.themecontainer {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+}
+.theme {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5%;
+}
+#dark {
+  background-color: black;
+}
+#salmon {
+  background-color: salmon;
+}
+#yellow {
+  background-color: wheat;
+}
+/* Class for colour changing */
+.darktheme {
+  background-color: black;
+  color: whitesmoke;
+}
+.yellowtheme {
+  background-color: wheat;
+  color: black;
+}
+.salmontheme {
+  background-color: salmon;
+  color: black;
+} 
+/* Video embedding */
+#btn-video {
+  padding: 1% 2%;
+}
+.videof {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.videof > label {
+  display: inline-block;
+}
+#video-name {
+  width: 100%;
 }
